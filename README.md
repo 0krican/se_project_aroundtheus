@@ -20,4 +20,4 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 Good luck and have fun!
 
-- [Link to video submission]("C:\Users\Sebastian Alfaro\Downloads\Recording 2024-07-20 134913.mp4")
+- [Link to video submission]("https://youtu.be/MT3qcj2mFeo?si=yED0ZRM67MUMJ5Px")
