@@ -1,8 +1,8 @@
 .card {
   display: flex;
   flex-direction: column;
-
   list-style-type: none;
+  border-radius: 10px;
 }
 .card__image {
   width: 282px;
@@ -30,6 +30,7 @@
   transition: opacity 0.35s;
   flex-shrink: 0;
 }
+
 .card__title {
   max-width: 220px;
   font-size: 24px;

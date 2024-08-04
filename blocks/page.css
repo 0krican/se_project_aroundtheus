@@ -25,3 +25,11 @@
     max-width: 282px;
   }
 }
+
+.page__content {
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
