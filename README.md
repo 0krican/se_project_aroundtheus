@@ -1,4 +1,4 @@
-# Project 3: Around The U.S.
+# Sprint 3: Around The U.S.
 
 ### Description & Tech Used
 
@@ -17,10 +17,8 @@ This project is made so all the elements are displayed correctly on popular scre
 
 - [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)
 
-**Images**
-
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
-
 Good luck and have fun!
 
 - [Link to video submission]("https://youtu.be/MT3qcj2mFeo?si=yED0ZRM67MUMJ5Px")
+
+- [Link to Git-hub Project] ("https://github.com/0krican/se_project_aroundtheus.git")
