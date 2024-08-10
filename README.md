@@ -1,10 +1,13 @@
 # Project 3: Around The U.S.
 
-### Overview
+### Description & Tech Used
 
-- Intro
-- Figma
-- Images
+- This project is profile for a user on the website "Around the world" to showcase the places they have traveled too
+  and photographed along their journey, Allowing them to share it with the world and other fellow Adventures!
+
+- Techeneques used to make this site envoled alot of CSS code and making sure I was using Figma correctly to import
+  all the photos that were needed for the project also made custom screen views for phones. And made sure to follow
+  along the video recordings as much as I could and also used some outside research to find some missing answers.
 
 **Intro**
 
