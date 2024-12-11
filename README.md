@@ -21,4 +21,4 @@ Good luck and have fun!
 
 - [Link to video submission]("https://youtu.be/MT3qcj2mFeo?si=yED0ZRM67MUMJ5Px")
 
-- [Link to Git-hub Project] ("https://github.com/0krican/se_project_aroundtheus.git")
+- [Link to Git-hub Project] ("https://0krican.github.io/se_project_aroundtheus/")
