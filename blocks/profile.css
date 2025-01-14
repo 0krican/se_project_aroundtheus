@@ -21,8 +21,8 @@
 
 .profile__edit-button {
   background: transparent url(../images/edit-button.svg) center no-repeat;
-  height: 24px;
-  width: 24px;
+  height: 18px;
+  width: 18px;
   grid-area: button;
   margin-top: 15px;
   margin-bottom: 9px;
@@ -68,6 +68,7 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 373px;
+  margin-bottom: 36px;
 }
 
 .profile__image {
@@ -162,6 +163,6 @@
 
   .profile__add-button {
     margin: 0;
-    width: 100%;
+    width: 282px;
   }
 }
