@@ -1,10 +1,11 @@
 .profile {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  padding-top: 40px;
-  padding-bottom: 51px;
+  padding: 40px 0 32px;
   max-width: 880px;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .profile__info {
@@ -14,9 +15,7 @@
     "description description";
   grid-template-columns: minmax(auto, 375px) auto;
   justify-content: center;
-  gap: 10px;
-  align-items: baseline;
-  gap: 0 10px;
+  grid-gap: 7px 17px;
 }
 
 .profile__edit-button {
@@ -24,8 +23,9 @@
   height: 24px;
   width: 24px;
   grid-area: button;
-  margin-top: 15px;
-  margin-bottom: 9px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
   flex-shrink: 0;
   color: #ffffff;
   border: 1px solid #fff;
@@ -68,7 +68,7 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 373px;
-  margin-bottom: 36px;
+  margin-bottom: 0px;
 }
 
 .profile__image {
@@ -88,86 +88,70 @@
   opacity: 0.6;
 }
 
-@media screen and (max-width: 920px) {
-  .profile__title {
-    font-size: 38px;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .profile__title {
-    font-size: 35px;
-  }
-
-  .profile__image {
-    margin-left: 30px;
-  }
+@media screen and (max-width: 768px) {
   .profile__info {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    grid-template-columns: auto;
   }
-}
 
-@media screen and (max-width: 740px) {
   .profile__title {
     font-size: 32px;
-    max-width: 250px;
+    line-height: 38px;
+    max-width: 340px;
   }
-}
 
-@media screen and (max-width: 670px) {
-  .profile__title {
-    max-width: 196px;
-    font-size: 25px;
-  }
-  .profile__add-button {
-    width: 120px;
-  }
-}
-
-@media screen and (max-width: 560px) {
-  .profile {
-    flex-direction: column;
-    padding-bottom: 36px;
-    padding-top: 42px;
-  }
   .profile__image {
-    margin: 0 auto;
+    margin: 0 10px 0 0;
   }
-  .profile__title {
-    font-size: 22px;
-    padding-top: 26px;
-  }
-  .profile__description {
-    text-align: center;
-    margin: 0;
-    font-size: 14px;
+
+  .profile__add-button {
+    width: 50px;
   }
 }
 
-@media screen and (max-width: 480px) {
+/* this is where the cards drop to 1 column, so the profile can change to mobile style */
+@media screen and (max-width: 621px) {
   .profile {
-    justify-content: center;
-    align-items: center;
+    padding: 43px 0 21px;
+    flex-direction: column;
+    text-align: center;
   }
 
   .profile__info {
-    justify-content: center;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 29px 0 33px 0;
+    max-width: 320px;
+    gap: 14px;
+  }
+
+  .profile__title {
+    font-size: 22px;
+    min-width: 201px;
+    max-width: 222px;
   }
 
   .profile__description {
     width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    max-width: 282px;
+  }
+
+  .profile__image {
+    margin-right: 0;
   }
 
   .profile__add-button {
-    margin: 0;
-    width: 282px;
+    width: 100%;
+    max-width: 282px;
+    margin: 0 auto;
   }
 
   .profile__edit-button {
-    height: 18px;
     width: 18px;
+    height: 18px;
+    background-size: 8px 8px;
   }
 }
