@@ -34,7 +34,7 @@
   display: block;
   width: 100%;
   margin-bottom: 48px;
-  padding: 10px;
+  padding: 10px 0;
   box-sizing: border-box;
   font-size: 14px;
   line-height: 17px;
@@ -49,14 +49,14 @@
   border: none;
   padding: 14px 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
   cursor: pointer;
   border-radius: 2px;
   transition: opacity 0.3s;
 }
 
 .modal__save-button:hover {
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .modal__close-button {
@@ -92,6 +92,8 @@
   }
 
   .modal__close-button {
+    width: 20px;
+    height: 20px;
     top: -36px;
     right: 0;
   }
