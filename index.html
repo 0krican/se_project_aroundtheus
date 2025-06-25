@@ -21,15 +21,12 @@
         <div class="profile__info">
           <h1 class="profile__title" id="profile__title">Jacques Cousteau</h1>
           <button class="profile__edit-button" id="profile-edit-button" type="button"></button>
-          <p class="profile__description" id="profile__description">
-            Explorer
-          </p>
+          <p class="profile__description" id="profile__description">Explorer</p>
         </div>
-        <button class="profile__add-button" type="button"></button>
+        <button class="profile__add-button" id="add-card-button" type="button"></button>
       </section>
       <section class="cards page__section">
-        <ul class="cards__list" id="cards__list">
-        </ul>
+        <ul class="cards__list" id="cards__list"></ul>
         <template id="card-template">
           <li class="card">
             <img class="card__image" src="" alt="">
@@ -37,6 +34,7 @@
               <h2 class="card__title"></h2>
               <button class="card__like-button" type="button"></button>
             </div>
+            <button class="card__delete-button" type="button" aria-label="Delete"></button>
           </li>
         </template>
       </section>
@@ -45,6 +43,7 @@
       <p class="footer__copyright">© 2024 Around The U.S.</p>
     </footer>
   </div>
+
   <div class="modal">
     <div class="modal__container">
       <button class="modal__close-button" type="button"></button>
@@ -56,6 +55,27 @@
       </form>
     </div>
   </div>
+
+  <div class="modal" id="add-card-modal">
+    <div class="modal__container">
+      <button class="modal__close-button" type="button" id="add-card-close"></button>
+      <form class="modal__form" name="add-card-form">
+        <h2 class="modal__title">New place</h2>
+        <input type="text" class="modal__input" name="place" placeholder="Title" required />
+        <input type="url" class="modal__input" name="link" placeholder="Image link" required />
+        <button type="submit" class="modal__save-button">Save</button>
+      </form>
+    </div>
+  </div>
+
+<div class="modal" id="preview-modal">
+  <div class="modal__container modal__container_type_preview">
+    <button class="modal__close-button" type="button" id="preview-close"></button>
+    <img src="#" alt="" class="modal__image" id="preview-image" />
+    <p class="modal__caption" id="preview-caption"></p>
+  </div>
+</div>
+
   <script src="./scripts/index.js"></script>
 </body>
 

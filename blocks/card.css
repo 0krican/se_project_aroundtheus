@@ -1,14 +1,17 @@
 .card {
+  position: relative; /* ✅ ANCHORS DELETE BUTTON TO THIS CARD */
   display: flex;
   flex-direction: column;
   list-style-type: none;
   border-radius: 10px;
 }
+
 .card__image {
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0 0;
 }
+
 .card__description {
   display: flex;
   background-color: white;
@@ -21,6 +24,7 @@
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
 }
+
 .card__like-button {
   background: transparent url(../images/like-inactive.svg) center no-repeat;
   width: 21px;
@@ -41,7 +45,24 @@
   overflow: hidden;
   margin: 0;
 }
+
 .card__like-button:hover {
   opacity: 0.5;
   cursor: pointer;
+}
+
+.card__delete-button {
+  background: transparent url(../images/Trash.svg) center no-repeat;
+  width: 18px;
+  height: 19px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.card__delete-button:hover {
+  opacity: 0.6;
 }
