@@ -108,10 +108,12 @@
   background: transparent;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start; 
   max-width: 75vw;
   max-height: 75vh;
+  padding: 0;
 }
+
 
 .modal__image {
   max-width: 100%;
@@ -123,4 +125,7 @@
   color: white;
   font-size: 14px;
   margin-top: 10px;
+  text-align: left;
+  padding-left: 4px;
 }
+

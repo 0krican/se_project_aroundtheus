@@ -1,5 +1,5 @@
 .card {
-  position: relative; /* ✅ ANCHORS DELETE BUTTON TO THIS CARD */
+  position: relative; 
   display: flex;
   flex-direction: column;
   list-style-type: none;
@@ -10,6 +10,7 @@
   width: 282px;
   height: 282px;
   border-radius: 10px 10px 0 0;
+  cursor: pointer; 
 }
 
 .card__description {
@@ -65,4 +66,8 @@
 
 .card__delete-button:hover {
   opacity: 0.6;
+}
+
+.card__like-button_active {
+  background-image: url('../images/like-active.svg');
 }
