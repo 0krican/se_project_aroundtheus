@@ -19,7 +19,7 @@ function closeModal(modal) {
 
 function handleEscClose(evt) {
   if (evt.key === "Escape") {
-    const openModal = document.querySelector(".modal_opened");
+const activeModal = document.querySelector(".modal_opened");
     if (openModal) closeModal(openModal);
   }
 }
