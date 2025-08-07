@@ -149,3 +149,32 @@
 .modal__error_visible {
   display: block;
 }
+
+.modal__input-container {
+  position: relative;
+  margin-bottom: 48px;
+}
+
+.modal__input {
+  width: 100%;
+  padding: 10px 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal__error {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  font-size: 12px;
+  color: red;
+  line-height: 1.2;
+  visibility: hidden;
+}
+
+.modal__error_visible {
+  visibility: visible;
+}
