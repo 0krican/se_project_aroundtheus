@@ -19,8 +19,8 @@ function closeModal(modal) {
 
 function handleEscClose(evt) {
   if (evt.key === "Escape") {
-const activeModal = document.querySelector(".modal_opened");
-    if (openModal) closeModal(openModal);
+    const activeModal = document.querySelector(".modal_opened");
+    if (activeModal) closeModal(activeModal); 
   }
 }
 
@@ -32,13 +32,13 @@ document.querySelectorAll(".modal").forEach((modal) => {
   });
 });
 
-const profileModal = document.querySelector('.modal');
-const editButton = document.querySelector('.profile__edit-button');
-const closeButton = profileModal.querySelector('.modal__close-button');
-const nameInput = document.querySelector('input[name="name"]');
-const jobInput = document.querySelector('input[name="description"]');
+const profileModal = document.querySelector('#profile-modal');
+const profileEditButton = document.querySelector('.profile__edit-button');
+const profileCloseButton = profileModal.querySelector('.modal__close-button');
 const profileName = document.querySelector('.profile__title');
 const profileJob = document.querySelector('.profile__description');
+const nameInput = document.querySelector('input[name="name"]');
+const jobInput = document.querySelector('input[name="description"]');
 const profileFormElement = document.querySelector('.modal__form');
 
 function openProfileModal() {
@@ -47,8 +47,8 @@ function openProfileModal() {
   openModal(profileModal);
 }
 
-editButton.addEventListener("click", openProfileModal);
-closeButton.addEventListener("click", () => closeModal(profileModal));
+profileEditButton.addEventListener("click", openProfileModal);
+profileCloseButton.addEventListener("click", () => closeModal(profileModal));
 
 function handleProfileFormSubmit(evt) {
   evt.preventDefault();

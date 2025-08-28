@@ -65,31 +65,44 @@
     </div>
   </div>
 
-  <div class="modal" id="add-card-modal">
-    <div class="modal__container">
-      <button class="modal__close-button" type="button" id="add-card-close"></button>
-      <form class="modal__form" name="add-card-form">
-        <h2 class="modal__title">New place</h2>
-        <div class="modal__input-container">
-          <input type="text" class="modal__input" id="place-input" name="place" placeholder="Title" required minlength="2" maxlength="30" />
-          <span class="modal__error" id="place-input-error"></span>
-        </div>
-        <div class="modal__input-container">
-          <input type="url" class="modal__input" id="link-input" name="link" placeholder="Image link" required />
-          <span class="modal__error" id="link-input-error"></span>
-        </div>
-        <button type="submit" class="modal__save-button">Save</button>
-      </form>
-    </div>
-  </div>
+  <div class="modal" id="profile-modal">
+  <div class="modal__container">
+    <button class="modal__close-button" type="button"></button>
+    <form class="modal__form" name="edit-profile">
+      <h2 class="modal__title">Edit profile</h2>
 
-  <div class="modal" id="preview-modal">
-    <div class="modal__container modal__container_type_preview">
-      <button class="modal__close-button" type="button" id="preview-close"></button>
-      <img src="#" alt="" class="modal__image" id="preview-image" />
-      <p class="modal__caption" id="preview-caption"></p>
-    </div>
+      <div class="modal__input-container">
+        <input
+          type="text"
+          class="modal__input"
+          id="name-input"
+          name="name"
+          placeholder="Name"
+          required
+          minlength="2"
+          maxlength="40"
+        />
+        <span class="modal__error" id="name-input-error"></span>
+      </div>
+
+      <div class="modal__input-container">
+        <input
+          type="text"
+          class="modal__input"
+          id="description-input"
+          name="description"
+          placeholder="Description"
+          required
+          minlength="2"
+          maxlength="200"
+        />
+        <span class="modal__error" id="description-input-error"></span>
+      </div>
+
+      <button type="submit" class="modal__save-button">Save</button>
+    </form>
   </div>
+</div>
 
   <script src="./scripts/validate.js"></script>
   <script src="./scripts/index.js"></script>
