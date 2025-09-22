@@ -60,7 +60,7 @@ function handleProfileFormSubmit(evt) {
 profileFormElement.addEventListener('submit', handleProfileFormSubmit);
 
 const addCardButton = document.querySelector('#add-card-button');
-const addCardModal = document.querySelector('#add-card-modal');
+const addCardModal = document.querySelector('#card-modal');
 const addCardCloseButton = document.querySelector('#add-card-close');
 const addCardForm = document.forms['add-card-form'];
 const placeInput = addCardForm.elements['place'];
